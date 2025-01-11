@@ -1,21 +1,20 @@
 {
   "manifest_version": 3,
-  "name": "GithubCN",
-  "short_name": "GithubCN",
-  "description": "Github 汉化插件",
-  "version": "1.4",
-  "homepage_url": "https://github.com/JQiue/githubCN",
+  "name": "Guess Where You Are 汉化",
+  "short_name": "GithubCN汉化",
+  "description": "Github 汉化插件 - lsyyyy11更新",
+  "version": "0.0.1",
+  "homepage_url": "https://github.com/lsyyyy01-web/guessWhereYouAre_translate",
   "icons": {
-    "16": "img/icon-16.png",
-    "48": "img/icon-48.png",
-    "128": "img/icon-128.png"
+    "16": "img/favicon-1.png",
+    "48": "img/favicon-3.png"
   },
   "background": {
     "service_worker": "js/background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://github.com/*"],
+      "matches": ["https://*.guesswhereyouare.com/*"],
       "js": ["js/content.js"],
       "run_at": "document_end",
       "all_frames": true
